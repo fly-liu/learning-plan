@@ -9,5 +9,15 @@ multiple background images)等一些新属性。工作原理，得有一个新�
 CSS3 新特性：
 CSS3选择器，媒体查询，圆角，多列布局，元素阴影，文字阴影，渐变，弹性盒子，transform，animation，transition，@font-face
 
-
+浏览器兼容性问题：
+初始化哪些标签样式：
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+body{background:#fff;color:#333;font-size:12px; margin-top:5px;font:12px"宋体","Arial Narrow"}
+ul,ol{list-style-type:none;} 
+li{list-style:none} 
+select,input,img,select{vertical-align:middle;} 
+a{text-decoration:none;} 
+a:link{color:#009;} 
+a:visited{color:#800080;} 
+a:hover,a:active,a:focus{color:#c00;text-decoration:underline;}
 
