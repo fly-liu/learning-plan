@@ -10,6 +10,13 @@ CSS3 新特性：
 CSS3选择器，媒体查询，圆角，多列布局，元素阴影，文字阴影，渐变，弹性盒子，transform，animation，transition，@font-face
 
 浏览器兼容性问题：
+1.浏览器的margin,padding不相同
+2.浏览器文字大小不用，统一文字大小和行高
+3.浮动的清除，ff下不清除浮动是不行的
+4.元素的宽高不同,设置box-sizing:border-box;
+5.img标签留白问题，img标签后面有空白就会出现那个问题，解决方法是让img成为块级元素
+6.min-width失效
+
 初始化哪些标签样式：
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
 body{background:#fff;color:#333;font-size:12px; margin-top:5px;font:12px"宋体","Arial Narrow"}
