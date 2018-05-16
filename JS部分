@@ -152,4 +152,12 @@ mouseover和mouseend的区别：
 
 服务器Node.js和浏览器js的区别是什么？Node.js把js从客户端迁移了到服务端、主要做了哪些工作？为什么说Node.js适合做高并发的互联网应用？
 
+跨域技术：
+jsonp：动态插入script标签，通过script标签引入一个js文件，这个js文件载入成功后会执行我们在url参数中指定的函数，并且会把我们需要的json
+数据作为参数传入。
+CORS：服务器端对于CORS的支持，主要就是通过设置Access-Control-Allow-Origin来进行的。如果浏览器检测到相应的设置，就可以允许Ajax进行
+跨域的访问。
+使用window.name来进行跨域：window对象有个name属性，该属性有个特征：即在一个窗口(window)的生命周期内,窗口载入的所有的页面都是共享一个
+window.name的，每个页面对window.name都有读写的权限，window.name是持久存在一个窗口载入过的所有页面中的。
+使用HTML5的window.postMessage方法进行跨域传参数。
 
