@@ -24,6 +24,8 @@ setTimeout() 第一个参数是字符串而不是函数的时候就会造成内�
   递归拷贝
   使用Object.create()方法
 
+算法：
+
 递归、冒泡的应用场景：
 冒泡的应用场景，事件代理
 递归的应用场景，深拷贝
@@ -103,3 +105,10 @@ var str = {};
 var obj = { a: {a: "hello", b: 21} };
 deepClone(obj, str);
 console.log(str.a);
+
+写过哪些插件：
+轮播图，tab页切换，日历表控件，分页，移动端滑动加载事件，进度条，拖拽控件
+
+移动端触屏事件：
+
+mouseover和mouseend的区别：
