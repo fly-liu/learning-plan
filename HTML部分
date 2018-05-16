@@ -1,4 +1,19 @@
 HTML5新特性：
+1.新的Doctype
+2.figure元素，用<figure>元素标记文档中的一个图像,<figcaption>元素为<figure>元素定义标题，应该放在<figure>中第一或最后一个元素的位置。
+3.重定义<small>标签，标签定义小型文本（和旁注）
+4.去掉link和script的type属性
+5.contenteditable属性，让内容可编辑
+6.新增表单类型
+7.表单属性placeholder,required(必填),autofocus(自动获取焦点)
+8.Web存储，sessionstorage,localstorage
+9.语义化标签
+10.Audio,Video
+11.data-* 属性，自定义属性，js中可通过 element.dataset.* 获取属性，jQuery可以通过data()
+12.Canvas
+13.HTML5 拖放
+14.地理定位
+15.HTML5 Websocket
 
 HTML语义化标签的好处：
 HTML结构清晰，代码可读性更好，搜索引擎可以根据标签确定上下文和权重（SEO优化），便于团队开发维护
