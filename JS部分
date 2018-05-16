@@ -1,3 +1,16 @@
+提升性能的方式：
+减少http请求，80%的响应时间花在下载网页内容(images, stylesheets, javascripts,scripts, flash等)
+缓存Ajax
+延迟加载
+预加载
+压缩css文件
+压缩js文件
+压缩图片资源
+使用cdn加速
+合并多张图片
+
+如何清除Ajax缓存：
+
 添加、删除、替换、插入到某个节点的方法：
 obj.appendChild()
 obj.insertBefore()
