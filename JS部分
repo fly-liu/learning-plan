@@ -164,3 +164,6 @@ CORS：服务器端对于CORS的支持，主要就是通过设置Access-Control-
 window.name的，每个页面对window.name都有读写的权限，window.name是持久存在一个窗口载入过的所有页面中的。
 使用HTML5的window.postMessage方法进行跨域传参数。
 
+MVVM架构和MVC架构的区别：
+MVVM中的view和ViewModel可以互相通信。也可以互相调用
+MVC中是单向通信。也就是View更Model，必须通过Controller来链接
