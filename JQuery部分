@@ -2,7 +2,8 @@ jQuery 自动触发事件：
 直接执行事件方法
 使用trigger()方法完成模拟操作
 
-jQuery的on和liv的区别：
+.bind(),.live(),.delegate()和.on()之间的区别:
+
 
 jQuery事件的区别：
 
