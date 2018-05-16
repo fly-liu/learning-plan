@@ -156,10 +156,28 @@ console.log(str.a);
 闭包的应用场景：
 
 移动端触屏事件：
+touchstart事件：当手指触摸屏幕时候触发，即使已经有一个手指放在屏幕上也会触发
+touchmove事件：当手指在屏幕上滑动的时候连续地触发。调用preventDefault()事件可以阻止滚动
+touchend事件：当手指从屏幕上离开的时候触发。
+touchcancel事件：触摸结束的时候触发
 
-mouseover和mouseend的区别：
+事件(包括鼠标事件)发生的顺序如下： 
+(1)touchstart
+(2)mouseover
+(3)mousemove(一次)
+(4)mousedown
+(5)mouseup
+(6)click
+(7)touchend
 
-事件的区别：
+mouseover与mouseenter,mouseout与mouseleave的区别：
+mouseover与mouseenter
+mouseover事件：不论鼠标指针穿过被选元素或其子元素，都会触发 mouseover 事件。
+mouseenter事件：只有在鼠标指针穿过被选元素时，才会触发 mouseenter 事件。
+
+mouseout与mouseleave
+mouseout事件：不论鼠标指针离开被选元素还是任何子元素，都会触发 mouseout 事件。
+mouseleave事件：只有在鼠标指针离开被选元素时，才会触发 mouseleave 事件。
 
 服务器Node.js和浏览器js的区别是什么？Node.js把js从客户端迁移了到服务端、主要做了哪些工作？为什么说Node.js适合做高并发的互联网应用？
 
