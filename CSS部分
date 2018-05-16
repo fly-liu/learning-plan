@@ -1,6 +1,18 @@
 CSS编码规范：
 
 CSS3新特性：
+新增选择器
+边框：border-radius,border-image,box-shadow(元素阴影)
+背景：background-size
+渐变：background:linear-gradient()/radial-gradient()
+文本效果：text-overflow,text-shadow,text-wrap
+字体：@font-face
+动画效果：transform,transition,animation
+CSS3多列布局：columns
+盒子模型：box-sizing
+弹性盒子：flex
+多媒体查询：@media
+
 
 px和rem和em的区别：
 
