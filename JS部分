@@ -94,10 +94,13 @@ new操作符到底干了什么：
 事件代理/事件委托：
 原理使用dom冒泡，将事件绑定到父元素上，让父元素进行监听，通过e.target属性，提高性能
 
-ajax请求：
-创建一个xhr对象 var xhr = new XmlHttpRequest();
-创建请求 xhr.open('get',url,true);
-发送请求 xhr.send(null);
+创建ajax的过程：
+（1）创建XmlHttpRequest对象(异步调用对象) var xhr = new XmlHttpRequest();
+（2）创建HTTP请求，并指定请求方法、URL、验证信息 xhr.open('get',url,true);
+（3）设置响应HTTP请求状态变化的函数
+（4）发送HTTP请求 xhr.send(null);
+（5）获取异步调用返回的数据
+（6）使用JavaScript和DOM实现局部刷新
 
 浏览器请求过程：
 DNS解析
