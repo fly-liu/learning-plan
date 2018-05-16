@@ -1,3 +1,6 @@
+css编码规范：
+
+
 IE低版本浏览器支持CSS3属性（圆角、阴影、渐变等）（CSS3 PIE）
 IE8以及更早的版本不支持CSS3的一些新属性，本文主要是通过CSS3 PIE这个插件让IE早期版本支持CSS3，使用CSS的behavior行为，可以调用此文件，
 然后让IE也能实现一些常见的CSS3效果，例如我们常用到的圆角(border-radius)，盒阴影(box-shadow)，背景渐变(gradient)，多图片背景(
