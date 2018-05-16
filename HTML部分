@@ -13,8 +13,16 @@ image和canvas在处理图片的时候有什么区别：
 image是通过对象的形式描述图片
 canvas是通过专门的API将图片绘制在画布上
 
+webSocket：WebSocket是Web应用程序的传输协议，它提供了双向的，按序到达的数据流。他是一个Html5协议，WebSocket的连接是持久的，他通过在
+客户端和服务器之间保持双工连接，服务器的更新可以被及时推送给客户端，而不需要客户端以一定时间间隔去轮询。
 
+HTTP和HTTPS的区别：
+HTTP协议通常承载于TCP协议之上，在HTTP和TCP之间添加一个安全协议层（SSL或TSL），这个时候，就成了我们常说的HTTPS。
+默认HTTP的端口号为80，HTTPS的端口号为443
+HTTPS比HTTP协议安全
 
+为什么HTTPS安全：https之所以比http安全，是因为他利用ssl/tls协议传输。它包含证书，卸载，流量转发，负载均衡，页面适配，浏览器适配，refer
+传递等。保障了传输过程的安全性
 
 
 
