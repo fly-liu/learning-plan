@@ -13,8 +13,24 @@ CSS3多列布局：columns
 弹性盒子：flex
 多媒体查询：@media
 
-
 px和rem和em的区别：
+px像素（Pixel）。相对长度单位。像素px是相对于显示器屏幕分辨率而言的。
+em是相对长度单位。相对于当前对象内文本的字体尺寸。如当前对行内文本的字体尺寸未被人为设置，则相对于浏览器的默认字体尺寸。
+rem为元素设定字体大小时，仍然是相对大小，但相对的只是HTML根元素。
+任意浏览器的默认字体高都是16px。所有未经调整的浏览器都符合: 1em=16px。那么12px=0.75em,10px=0.625em。为了简化font-size的换算，
+需要在css中的body选择器中声明Font-size=62.5%，这就使em值变为 16px*62.5%=10px, 这样12px=1.2em, 10px=1em, 也就是说只需要将你
+的原来的px数值除以10，然后换上em作为单位就行了。
+
+哪些CSS属性是会被继承的：
+1.color
+2.font
+3.line-height
+4.text-align
+5.text-indent
+6.visibility
+7.white-space（用于指定如何处理空格）
+8.list-style
+9.cursor
 
 IE低版本浏览器支持CSS3属性（圆角、阴影、渐变等）（CSS3 PIE）
 IE8以及更早的版本不支持CSS3的一些新属性，本文主要是通过CSS3 PIE这个插件让IE早期版本支持CSS3，使用CSS的behavior行为，可以调用此文件，
