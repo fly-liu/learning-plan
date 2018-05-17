@@ -18,11 +18,10 @@ HTML5新特性：
 HTML语义化标签的好处：
 HTML结构清晰，代码可读性更好，搜索引擎可以根据标签确定上下文和权重（SEO优化），便于团队开发维护
 
-轮播图最后一页怎么处理：
-
 HTML5的meta标签：
 
 HTML5禁止苹果系统识别数字为手机号码：
+<meta name="format-detection" content="telephone=no,email=no"/>
 
 image和canvas在处理图片的时候有什么区别：
 image是通过对象的形式描述图片
