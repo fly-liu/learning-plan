@@ -86,7 +86,9 @@ $( "#members li a" ).live( "click", function( e ) {} );
 $( "#members" ).on( "click", "li a", function( e ) {} ); 
 $( "#members" ).delegate( "li a", "click", function( e ) {} );
 
-jQuery事件的区别：
+hover()：将二个事件函数绑定到匹配元素上，分别当鼠标指针进入和离开元素时被执行
+是$(selector).mouseenter(handlerIn).mouseleave(handlerOut)的简写
+
 
 Zepto.js
 Zepto是一个轻量级的针对现代高级浏览器的JavaScript库，它与jquery有着类似的api。不支持IE
