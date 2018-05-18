@@ -1,3 +1,6 @@
+vue-cli: vue.js的脚手架，用于自动生成vue.js+webpack的项目模板，分为vue init webpack-simple 项目名 和vue init webpack 项目名 两种
+vue-cli是什么： https://blog.csdn.net/qq_35574915/article/details/76060997
+
 webpack：webpack是一个模块打包工具，可以使用webpack管理模块依赖，并编译输出模块所需要的静态文件。它能够很好的管理、打包web开发中所用到
 的html,css,javascript以及各种静态资源文件（图片，字体等），提高开发效率。对于不同的资源，webpack提供了对应的模块加载器。
 
