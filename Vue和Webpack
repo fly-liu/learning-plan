@@ -1,3 +1,12 @@
+vue指令：
+模板：
+{{}},vue-text,v-html : 单向数据绑定
+vue-model: 双向数据绑定
+vue-once: 数据绑定一次
+vue-pre: 不编译，直接原样显示
+常用指令：
+
+
 vue-cli: vue.js的脚手架，用于自动生成vue.js+webpack的项目模板，分为vue init webpack-simple 项目名 和vue init webpack 项目名 两种
 vue-cli是什么： https://blog.csdn.net/qq_35574915/article/details/76060997
 
