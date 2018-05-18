@@ -1,13 +1,53 @@
-vue指令：
+1.vue指令：
 模板：
 {{}},vue-text,v-html : 单向数据绑定
 vue-model: 双向数据绑定
 vue-once: 数据绑定一次
 vue-pre: 不编译，直接原样显示
-常用指令：
+2.常用指令：
 v-for: 对数组和对象进行循环操作，
 v-if/v-show: 用来显示隐藏元素，v-if是每次删除后创建，v-show是通过display实现
-
+3.事件和属性：
+v-on:click='' 简写 @click=''
+v-bind:属性 ，用于绑定属性，简写 :src=''
+4.$event事件对象，里面包含事件相关信息，如事件源，事件类型
+5.事件冒泡，@click.stop = ''阻止事件冒泡
+6.键盘事件：@keydow.13或@keydown.enter
+事件修饰符: .stop调用event.stopPropagation();
+7.过滤器：
+用来过滤模型数据，在显示之前进行数据对的处理和筛选
+语法：{{data|fiter(参数)|filter(参数)}}
+8.发送Ajax：
+vue本身不支持Ajax，需要使用vue-resourc axios 等插件实现，建议使用axios
+axios是一个基于promise的http请求，用来发送请求
+基本用法：
+axios.get(url[,options]); 传参方式，url或者params传参
+axios.post(url,data[,options]);
+axios不支持跨域请求，可以使用vue-resource 发送跨域请求
+跨域发送请求: this.$http.get(url[,options]); this.$http.post(url,data[,options]);
+8.vue生命周期:
+beforeCreate(创建前) > created(创建后) > beforeMount(载入前) > mounted(载入后) > beforeUpdate(修改前) > updated(修改后) > 
+beforeDestroy(销毁前) > destroyed(销毁后)
+9.计算属性：
+计算属性也是用来存储数据，具有这俩个特点：数据可以进行逻辑处理操作，对计算属性中的数据进行监视
+10.自定义指令：
+自定义全局指令   vue.directive （指令id，定义对象）
+11.过渡（动画）：
+vue在插入更新或一处dom时，提供多种不同方式应用过程，本质还是使用css动画，
+基本用法： 使用transition组件，将要执行动画的元素放在改组件内，结合第三方动画库  animater.css 一起使用：
+<transition enter-active-class="animated fadeInLeft" leave-active-class="animated fadeOutRight">
+    <p v-show="flag">显示内容</p>
+</transition>  
+12.组件：
+组件是vue最强大的功能之一，组件可封装html元素，封装重用代码，组件是自定义元素对象。
+引用模板讲组件内容放在模板<template>中引用，组件中数据data;function  和vue实例存储数据不同
+数据传递：父子组件，在一个组件内部又定义了另一个组件，称为父子组件。
+子组件只能在父组件中使用，默认情况下，子组件不能访问付组件数据。每个组件的作用域是独立的。
+组件间数据的通信：在调用组件时，绑定想要获取的付组件的数据，在子组件内部，使用props选项来生命获取的数据，接收来自付组件的数据。
+对象必须使用函数返回。
+组件中的数据有三种形式：data props computed
+13.vue-router 路由
+使用vue.js 开发spa 单页面应用，根绝不同url地址，显示不同内容，但实现在统一页面中，称单页面应用。
 
 vue-cli: vue.js的脚手架，用于自动生成vue.js+webpack的项目模板，分为vue init webpack-simple 项目名 和vue init webpack 项目名 两种
 vue-cli是什么： https://blog.csdn.net/qq_35574915/article/details/76060997
