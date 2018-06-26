@@ -1,0 +1,88 @@
+vue 组件的3种写法：
+/ *
+**1.使用script标签：
+**
+* /
+<div id="app">
+    <my-component></my-component>
+</div>
+
+<!-- 使用<script>标签时，type指定为text/x-template，意在告诉浏览器这不是一段js脚本，浏览器在解析HTML文档时会忽略<script>标签内定义的内容。-->
+<script type="text/x-template" id="myComponent">
+    <div>使用script标签创建组件</div>
+</script>
+
+<script>
+// 全局注册组件
+Vue.component('my-component',{
+    template: '#myComponent'
+});
+
+new Vue({
+    el: '#app',
+});
+</script>
+
+
+/ *
+**2.使用template标签：
+**
+* /
+<div id="app">
+    <my-component></my-component>
+</div>
+
+<template id="myComponent">
+    <div>使用template标签创建组件</div>
+</template>
+
+<script>
+Vue.component('my-component',{
+    template: '#myComponent'
+});
+
+new Vue({
+    el: "#app",
+});
+</script>
+
+/ *
+**3.单文件组件，这种方法常用在vue单页面应用中，创建后缀为.vue的文件，放在components文件夹中
+**
+* /
+// Hello.vue
+<template>
+    <div class="hello">
+        <h1>{{msg}}</h1>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "hello",
+    data() {
+        return {
+            msg: '这是一个单文件组件'
+        }
+    }
+}
+</script>
+
+// App.vue
+<template>
+    <div id="app">
+        <hello></hello>
+    </div>
+</template>
+
+<script>
+// 导入组件
+import hello from './components/Hello'
+
+export default {
+    name: "#app",
+    comments: {
+        Hello
+    }
+}
+</script>
